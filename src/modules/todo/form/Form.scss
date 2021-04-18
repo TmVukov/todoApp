@@ -1,0 +1,22 @@
+@import '../../../styles/mixins.scss';
+
+.list__form{
+    @include form;
+    margin-top: 50px;
+}
+
+.list__form > * {
+    margin-bottom: 25px;
+}
+
+.list__form input{
+    @include input
+}
+
+.list__form button{
+    @include button
+}
+
+.list__form button:hover{
+    @include hover;
+}

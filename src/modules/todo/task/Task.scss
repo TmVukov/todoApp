@@ -1,0 +1,43 @@
+@import '../../../styles/mixins.scss';
+
+.task__container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;    
+    color: $color-task;
+}    
+
+.task__container span{
+    margin-right: 20px;
+    color: $color-task;    
+}
+
+.task{
+    border: 1px solid $color-task;
+    border-radius: 5px;    
+    width: 500px;
+    padding: 10px 0;
+}
+
+
+.task__info{
+    display: flex;
+    flex-direction: column;    
+}
+
+.task__info > *{
+    margin: 5px;
+}
+
+.task__controls{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.task__checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/mixins.scss';
+
+.details{
+    background-color: $color-task;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+}
+
+.details > * {
+    margin-bottom: 20px;
+}

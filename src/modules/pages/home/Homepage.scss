@@ -1,0 +1,30 @@
+@import '../../../styles/mixins.scss';
+
+.home__container{
+     display: flex;
+     flex-direction: column;
+     
+}
+.home__top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.home__top p,
+.home__container label{
+    color: $color-font
+}
+
+.home__top input,
+.home__top select{
+    border: 1px solid $color-main;
+    border-radius: 5px;
+    padding: 5px;    
+    outline: none;
+}
+
+.home__top button{
+    @include link
+}

@@ -1,0 +1,45 @@
+@import '../../../styles/mixins.scss';
+
+.login__container {
+  @include container;
+}
+
+.login__container p {
+  font-size: 12px;  
+}
+
+.login__form {
+  @include form;
+  height: 220px;
+}
+
+.login__form input {
+  @include input;
+}
+
+.login__form input::placeholder {
+  color: $color-font;
+}
+
+.login__form button {
+  @include button;
+}
+
+.login__form button:hover {
+  @include hover;
+}
+
+.login__msg {
+  @include message;
+}
+
+.Toastify__toast--error {
+  border: 1px solid $color-msg;
+  background: white !important;
+  color: $color-msg !important;
+  font-size: 14px;  
+}
+
+.Toastify__close-button{
+  color: $color-msg !important;
+}

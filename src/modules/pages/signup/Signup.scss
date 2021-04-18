@@ -1,0 +1,42 @@
+@import '../../../styles/mixins.scss';
+
+.signup__container {
+  @include container;
+}
+
+.signup__container p {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.signup__form {
+  @include form;
+  height: 300px;
+}
+
+.signup__form input {
+  @include input;
+}
+
+.signup__form input::placeholder {
+  color: $color-font;
+}
+
+.signup__form button {
+  @include button;
+  margin-bottom: 10px;
+}
+
+.signup__form button:hover {
+  @include hover;
+}
+
+.signup__msg {
+  @include message;
+}
+
+.fb__link {
+  all: unset;
+  text-decoration: underline;
+  cursor: pointer;
+}

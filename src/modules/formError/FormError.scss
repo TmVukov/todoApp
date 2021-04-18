@@ -1,0 +1,11 @@
+@import '../../styles/mixins.scss';
+
+.error__container{
+    margin-top: -20px;
+    color: $color-msg;
+}
+
+.error__container > * {
+    all: unset;
+}
+
