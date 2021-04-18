@@ -11,9 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import TaskBox from '../task/Task';
 
 interface ListProps {
-  title: string;
   setTitle: any;
-  description: string;
   setDescription: any;
   setId: any;
 }

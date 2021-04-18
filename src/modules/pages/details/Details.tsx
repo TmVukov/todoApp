@@ -14,18 +14,20 @@ const Details: FC = () => {
   const selectedTask = useSelector((state: RootState) =>
     selectTaskById(state, id),
   ) as Task;
+  console.log(selectedTask);
 
   useEffect(() => {
     dispatch(getTasks());
   }, [dispatch]);
+  
 
   return (
     <div>
       <Link to="/">home</Link>
 
       {selectedTask &&
-        [selectedTask].map((task: Task, i: number) => (
-          <section key={i} className="details">
+        [selectedTask].map((task: Task) => (
+          <section key={task.id} className="details">
             <p>{task.title}</p>
             <p>{task.description}</p>
             <p>{task.createdAt.slice(0, -3)}</p>

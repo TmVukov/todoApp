@@ -91,13 +91,7 @@ const Homepage: FC = () => {
         id={id}
       />
 
-      <List
-        title={title}
-        setTitle={setTitle}
-        description={description}
-        setDescription={setDescription}
-        setId={setId}
-      />
+      <List setTitle={setTitle} setDescription={setDescription} setId={setId} />
     </div>
   );
 };
