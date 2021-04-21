@@ -1,5 +1,5 @@
-import { FC } from "react";
-import "./FormError.scss";
+import { FC } from 'react';
+import './FormError.scss';
 
 interface FormProps {
   children: any;

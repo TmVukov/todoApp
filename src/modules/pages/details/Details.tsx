@@ -9,17 +9,16 @@ import { Link, useParams } from 'react-router-dom';
 
 const Details: FC = () => {
   const dispatch = useDispatch();
-  const { id } = useParams() as any;
-
-  const selectedTask = useSelector((state: RootState) =>
-    selectTaskById(state, id),
-  ) as Task;
-  console.log(selectedTask);
+  const { id } = useParams<{ id: string }>();
 
   useEffect(() => {
     dispatch(getTasks());
   }, [dispatch]);
-  
+
+  const selectedTask = useSelector((state: RootState) =>
+    selectTaskById(state, id),
+  ) as Task;
+  // console.log(selectedTask);
 
   return (
     <div>

@@ -166,10 +166,4 @@ const SignUp: FC = () => {
 
 export default SignUp;
 
-// {...register('passwordConfirm', {
-//   required: 'Please confirm password',
-//   validate: value => {
-//      const { passwordConfirm } = getValues()
-//      return value === passwordConfirm || 'Passwords do not match!'
-//   }
-// })}
+

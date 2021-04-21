@@ -43,7 +43,7 @@ const LogIn: FC = () => {
           bodyClassName: 'Toastify__close-button',
         });
         setLoading(false);
-      }); 
+      });
   };
 
   return (
@@ -76,7 +76,7 @@ const LogIn: FC = () => {
 
             <input
               {...register('password', {
-                required: 'Password is required'
+                required: 'Password is required',
               })}
               type="password"
               placeholder="Enter password"

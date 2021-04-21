@@ -11,7 +11,7 @@ const PublicRoute: FC<PublicRouteProps> = ({
   component: Component,
   ...rest
 }) => {
-  const user = useSelector(selectUser) as any;
+  const user = useSelector(selectUser) as any;  
 
   return (
     <Route

@@ -16,7 +16,6 @@ const Homepage: FC = () => {
   const [title, setTitle] = useState<string>('');
   const [description, setDescription] = useState<string>('');
   const [id, setId] = useState<string>('');
-
   const dispatch = useDispatch();
 
   const { sortValue } = useSelector((state: RootState) => state.tasks);

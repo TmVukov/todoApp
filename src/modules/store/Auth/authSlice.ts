@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { RootState } from "../../store/store";
-import { AuthState } from "./authTypes";
+import { createSlice } from '@reduxjs/toolkit';
+import { RootState } from '../../store/store';
+import { AuthState } from './authTypes';
 
 const authSlice = createSlice({
-  name: "auth",
+  name: 'auth',
   initialState: { user: null } as AuthState,
   reducers: {
     setUser(state, action) {
