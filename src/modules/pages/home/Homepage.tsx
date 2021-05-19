@@ -63,7 +63,7 @@ const Homepage: FC = () => {
           >
             <option value="desc">date desc</option>
             <option value="asc">date asc</option>
-          </select>
+          </select> 
 
           <button onClick={handleLogout}>log out</button>
         </div>

@@ -23,7 +23,7 @@ const initialState = tasksAdapter.getInitialState({
   sortValue: 'desc' as sortingStatus,
   searchValue: '',
   editing: false,
-});
+}); 
 
 const tasksSlice = createSlice({
   name: 'tasks',

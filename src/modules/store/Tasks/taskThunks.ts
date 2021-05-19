@@ -31,7 +31,7 @@ export const getTasks = createAsyncThunk('tasks/getTasks', async () => {
     const { title, description, createdAt, completed } = doc.data();
     fetchedTasks.push({ title, description, createdAt, completed, id: doc.id });
   });
-  return fetchedTasks;
+  return fetchedTasks; 
 });
 
 export const addTask = createAsyncThunk(
@@ -44,6 +44,7 @@ export const addTask = createAsyncThunk(
       createdAt: new Date().toLocaleString('de-DE'),
     };
     const ref = await database.collection('tasks').add(newTask);
+    console.log(ref.id)
 
     return { ...newTask, id: ref.id };
   },
@@ -75,7 +76,7 @@ export const editTask = createAsyncThunk(
 export const taskCompleted = createAsyncThunk(
   'tasks/taskCompleted',
   async (data: dataCompleted) => {
-    database
+    await database
       .collection('tasks')
       .doc(data.id)
       .update({ completed: data.completed });

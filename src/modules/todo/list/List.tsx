@@ -34,7 +34,7 @@ const List: FC<ListProps> = ({ setTitle, setDescription, setId }) => {
     dispatch(setEditing(true));
     setTitle(title);
     setDescription(description);
-    setId(id);
+    setId(id); 
   };
 
   const handleTaskComplete = (

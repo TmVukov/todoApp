@@ -8,4 +8,4 @@ export interface Task {
 
 export type filterStatus = 'all' | 'completed' | 'not completed';
 
-export type sortingStatus = 'asc' | 'desc';
+export type sortingStatus = 'asc' | 'desc';  
